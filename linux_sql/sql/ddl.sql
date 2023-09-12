@@ -1,18 +1,6 @@
 \c host_agent;
 
-id,hostname,cpu_number,cpu_architecture,cpu_model,cpu_mhz,L2_cache,total_mem,timestamp
-
-id=1      
-hostname=spry-framework-236416.internal 
-cpu_number=1
-cpu_architecture=x86_64
-cpu_model=Intel(R) Xeon(R) CPU @ 2.30GHz
-cpu_mhz=2300.000
-L2_cache=256     
-total_mem=601324 
-timestamp=2019-05-29 17:49:53
-
-CREATE TABLE PUBLIC.host_info( 
+CREATE TABLE IF NOT EXISTS  PUBLIC.host_info( 
      id               SERIAL NOT NULL, 
      hostname         VARCHAR NOT NULL, 
      cpu_number       INT2 NOT NULL, 
@@ -32,3 +20,23 @@ INSERT INTO host_info (id, hostname, cpu_number, cpu_architecture, cpu_model, cp
 INSERT INTO host_info (id, hostname, cpu_number, cpu_architecture, cpu_model, cpu_mhz, l2_cache, "timestamp", total_mem) VALUES(3, 'noe2', 1, 'x86_64', 'Intel(R) Xeon(R) CPU @ 2.30GHz', 2300, 256, '2019-05-29 17:49:53.000', 601324);
 
 SELECT * FROM host_info;
+
+CREATE TABLE IF NOT EXISTS PUBLIC.host_usage 
+  ( 
+     "timestamp"    TIMESTAMP NOT NULL, 
+     host_id        SERIAL NOT NULL, 
+     memory_free    INT4 NOT NULL, 
+     cpu_idle       INT2 NOT NULL, 
+     cpu_kernel     INT2 NOT NULL, 
+     disk_io        INT4 NOT NULL, 
+     disk_available INT4 NOT NULL, 
+     CONSTRAINT host_usage_host_info_fk FOREIGN KEY (host_id) REFERENCES 
+     host_info(id) 
+  );
+
+INSERT INTO host_usage ("timestamp", host_id, memory_free, cpu_idle, cpu_kernel, disk_io, disk_available) 
+VALUES('2019-05-29 15:00:00.000', 1, 300000, 90, 4, 2, 3);
+INSERT INTO host_usage ("timestamp", host_id, memory_free, cpu_idle, cpu_kernel, disk_io, disk_available) 
+VALUES('2019-05-29 15:01:00.000', 1, 200000, 90, 4, 2, 3);
+
+SELECT * FROM host_usage;
