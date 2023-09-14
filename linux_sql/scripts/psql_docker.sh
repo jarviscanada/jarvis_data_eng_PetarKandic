@@ -34,7 +34,7 @@ case $cmd in
 
   start|stop) 
   # Check instance status; exit 1 if container has not been created
-  if [ $container_status == '[]' ]
+  if [ $container_status -eq 1 ]
   then
         exit 1
   fi
