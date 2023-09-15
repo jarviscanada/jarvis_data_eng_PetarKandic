@@ -1,16 +1,9 @@
-# Preferred name (Characters only)
 name: "Petar Kandic"
-# Your GitHub repo root URL
 github_repo_root_url: https://github.com/jarviscanada/jarvis_data_eng_PetarKandic
 
-# Introduce yourself, your academic and professional background.
-# What excites you about the software industry and your passion. At least 80 words
-summary: For years, I have passionate about both developing software, and learning about the field of software engineering. I began to program as a teenager, focusing on commonly-used languages such as Java. During university, I came to learn more about the theoritical foundations of computer science, and how to apply this knowledge. Finally, I have gained hands-on experience in the professional world. These experiences have allowed me to gain a wide range of skills. My strongest languages are Java and C, though I have experience with other languages, such as Python, JavaScript, and Bash, among others.
+summary: I am a software engineer with 5 years of experience developing applications. Throughout my professional and personal experience, I have gained a significant understanding of languages such as Java and C, as well as commonly used technologies, including Linux and Git. While back-end development is my greatest strength, I also have experience designing websites, utilizing HTML/CSS. I have worked alone and as part of a team, accomplishing goals alongside my coworkers. Whenever new challenges arise, I am prepared to take them on, using what I have learned.
 
-# Group your skills by level.
-# Your skills can be anything software related (e.g. language, frameworks, methodologies, software, etc.).
 skills:
-  # At least 5 skills
   proficient:
     - Java
     - Linux/Bash
@@ -18,15 +11,12 @@ skills:
     - Agile/Scrum
     - Git
     - C
-  # At least 5 skills
   competent:
     - HTML/CSS
     - JavaScript
     - Bootstrap
     - Python
-    - cURL
-    - Debugging
-  # At least 5 skills
+    - Rust
   familiar:
     - Docker
     - AWS
@@ -34,86 +24,40 @@ skills:
     - C#
     - C++
 
-# List of Jarvis projects
 jarvis_projects:
   - name: "Cluster Monitor"
     git_url: "/linux_sql"
-    # The project description allows hiring managers to understand your project and technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
-    # The project description must start with an action verb (https://bit.ly/3guO98u)
-    description: Developed several applications to monitor the status of the system. Shell scripts are used to gather data on system memory and performance. Then, this is stored in a database.
-  - name: "Core Java Apps"
-    git_url: "/core_java"
-    description:
-      - "Twitter App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
-      - "JDBC App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
-      - "Grep App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
-  - name: "Springboot App"
-    git_url: "/springboot"
-    description: ""
-  - name: "Python Data Analytics"
-    git_url: "/python_data_anlytics"
-    description: ""
-  - name: "Hadoop"
-    git_url: "/hadoop"
-    description: ""
-  - name: "Spark"
-    git_url: "/spark"
-    description: ""
-  - name: "Cloud/DevOps"
-    git_url: "/cloud_devops"
-    description: ""
+    description: Developed two Bash scripts to monitor the status of a Linux system. These shell scripts are used to gather data on system memory and performance. The data is stored on a PostgreSQL database, hosted on a Docker container. The scripts are automatically run every minute, using a Crontab job. The bash -x command was used to test the scripts. By automating these tasks, time is saved over having to manually check the system's status.
 
-# List of personal or academic projects
-# Feel free to add more projects
 highlighted_projects:
-    #project name
-  - name: "Tutoring Web App"
-    #URL is optional
+  - name: "Tutoring Web Application"
     git_url: "https://github.com/pkandic4/TutoringApplication"
-    # The project description must start with an action verb (https://bit.ly/3guO98u)
-    description: Designed a web tutoring app. The app dynamically displays a range of subjects for which tutors are available. The login system stores and retrieves account information using SQL. Active display elements use JavaScript.
+    description: Designed a web tutoring application in HTML/CSS, JavaScript, and SQL. I used the WebStorm IDE to create and implement this application. I used HTML/CSS to create the static components, and JavaScript to construct the active elements. The log-in system uses SQL to store and retrieve the user's log-in info. The application displays a range of subjects for which tutors are available. I tested this application using Mocha; this experience led to improvements in the UI. The application runs on the local machine, and is compatible with Windows, MacOS, and Linux.
   - name: "Java Car Dealership Simulator"
     git_url: "https://github.com/pkandic4/CarDealershipSimulator"
-    description: Programmed a fully functional car dealership simulator in Java. A list of cars - including makes, prices, and other information - is imported from a text file. Available commands include the ability to buy cars, return them, and to filter the list based on certain criteria. There are also advanced commands, including filtering the sales team based on their transactions. Error handling is implemented to ensure the program operates in a stable manner.
+    description: Designed and programmed a car dealership simulator in Core Java. I used the IntelliJ IDE to develop and implement this application. The simulator enables the user to buy and return cars, as well as filter the car list based on factors such as make and price. I employed unit testing, and each command was extensively tested. The application runs on the local machine, and is compatible with Windows, MacOS, and Linux.
 
-#List of professional experience
-#The job description allows hiring managers to understand your job and the technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
-#The description must be more than 25 words. If your experience is not software related, please focus on soft skills and achievements (e.g. team collaboration, problem-solving, improvements, communication).
 professional_experience:
-  #Write your Jarvis role as a professional experience rather than training.
   - title: "Software Developer"
     company: "Jarvis"
     duration: "2023-present"
-    # The project description must start with an action verb (https://bit.ly/3guO98u)
-    description: "Working alone and with a team to develop software."
+    description: "Designing and programming applications in Bash and Java. I have developed Bash scripts to gather machine and usage data on Linux systems. These scripts interact with a PostgreSQL instance stored on a docker container to store data persistently. I used Vim to develop these scripts. The scripts were tested from the command line, using bash -x. During my time at Jarvis, I have worked with a team to reach our goals. Our team uses the Agile model, and we hold daily scrums, which allow us to understand our progress. These scrums allow us to understand our progress on different applications. With this understanding, we can assist each other as necessary."
   - title: "Data Engineer"
     company: "Fiix Software"
     duration: "2021"
-    description: "Developed web scraping software, and then populated databases with the gathered data. The scraper I developed executed 35% faster than its predecessor, with 40% fewer lines of code. In addition, I developed an automated script to transfer data into company databases."
+    description: "Developed a web scraping application using Python (including the pandas and boto3 libraries) to gather the web usage data of our clients. This application was then deployed over AWS, and executed at regular intervals using cron. Before the deployment, I also used AWS to test the application on sample databases. The scraper executed 35% faster than its predecessor. This allowed the company to process data at a faster rate than before." 
 
-#List of edcuation
 education: 
   - school_name: "Toronto Metropolitan University"
     duration: "2018-2022"
     degree: "Bachelor of Sciences"
     department: "Computer Science"
-    # optional
     awards_achievements: 
       - "Dean's List (2020, 2021)"
       - "GPA: 3.3/4.0"
 
-#Optional section
 others:
-    #category
-  - title: "Certificates"
-    #list of items
-    bullets:
-      - "Udacity Machine Learning (2019)"
-  - title: "Awards"
-    bullets:
-      - "Winner"
   - title: "Activities/Hobbies"
     bullets:
-      - "Basketball player"
-      - "Competitive gaming"
-      - "Volunteer, ABC Food bank: Ut enim ad minim veniam"
+      - "Organized a competitive soccer league"
+      - "Captained several competitive basketball teams"
