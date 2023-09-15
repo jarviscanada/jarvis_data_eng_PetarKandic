@@ -1,16 +1,11 @@
-# Preferred name (Characters only)
 name: "Petar Kandic"
-# Your GitHub repo root URL
 github_repo_root_url: https://github.com/jarviscanada/jarvis_data_eng_PetarKandic
 
 # Introduce yourself, your academic and professional background.
 # What excites you about the software industry and your passion. At least 80 words
-summary: I am a software engineer with 5 years of experience developing applications. Over the course of my professional and personal experience, I have gained a significant understanding of languages such as Java and C, as well as commonly-used technologies including Linux and Git. I have worked both alone and as part of a team, accomplising goals alongside my coworkers. 
+summary: I am a software engineer with 5 years of experience developing applications. Over the course of my professional and personal experience, I have gained a significant understanding of languages such as Java and C, as well as commonly-used technologies, including Linux and Git. While back-end development is my greatest strength, I also have experience designing websites, utilizing HTML/CSS. I have worked both alone and as part of a team, accomplising goals alongside my coworkers. Whenever new challenges arise, I am prepared to take them on, using whal I have learned.
 
-# Group your skills by level.
-# Your skills can be anything software related (e.g. language, frameworks, methodologies, software, etc.).
 skills:
-  # At least 5 skills
   proficient:
     - Java
     - Linux/Bash
@@ -18,14 +13,12 @@ skills:
     - Agile/Scrum
     - Git
     - C
-  # At least 5 skills
   competent:
     - HTML/CSS
     - JavaScript
     - Bootstrap
     - Python
     - Rust
-  # At least 5 skills
   familiar:
     - Docker
     - AWS
@@ -33,47 +26,23 @@ skills:
     - C#
     - C++
 
-# List of Jarvis projects
 jarvis_projects:
   - name: "Cluster Monitor"
     git_url: "/linux_sql"
-    # The project description allows hiring managers to understand your project and technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
-    # The project description must start with an action verb (https://bit.ly/3guO98u)
-    description: Developed several applications to monitor the status of the system. Shell scripts are used to gather data on system memory and performance. Then, this is stored in a database.
-  - name: "Core Java Apps"
-    git_url: "/core_java"
-    description:
-      - "Twitter App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
-      - "JDBC App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
-      - "Grep App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
-  - name: "Springboot App"
-    git_url: "/springboot"
-    description: ""
-  - name: "Python Data Analytics"
-    git_url: "/python_data_anlytics"
-    description: ""
-  - name: "Hadoop"
-    git_url: "/hadoop"
-    description: ""
-  - name: "Spark"
-    git_url: "/spark"
-    description: ""
-  - name: "Cloud/DevOps"
-    git_url: "/cloud_devops"
-    description: ""
+    description: Developed two Bash scripts to monitor the status of a Linux system. These shell scripts are used to gather data on system memory and performance. The data is stored on a PostgreSQL database, hosted on a Docker container. The scripts are automatically run every minute, using a Crontab job. These scripts, and their automation, saves time over having to manually check the system's status.
 
 # List of personal or academic projects
 # Feel free to add more projects
 highlighted_projects:
     #project name
-  - name: "Tutoring Web App"
+  - name: "Tutoring Web Application"
     #URL is optional
     git_url: "https://github.com/pkandic4/TutoringApplication"
     # The project description must start with an action verb (https://bit.ly/3guO98u)
-    description: Designed a web tutoring app. The app dynamically displays a range of subjects for which tutors are available. The login system stores and retrieves account information using SQL. Active display elements use JavaScript.
+    description: Designed a web tutoring application. The goal was to develop a mock-up of a real tutoring application, with a log-in functionality. In addition to HTML/CSS, JavaScript was used to construct the active elements. The login system uses SQL to store and retrieve the user's log-in info. The application displays a range of subjects for which tutors are available. I enlisted several friends to test this application; this experience led to improvements in the UI. The application runs on the local machine.
   - name: "Java Car Dealership Simulator"
     git_url: "https://github.com/pkandic4/CarDealershipSimulator"
-    description: Programmed a fully functional car dealership simulator in Java. A list of cars - including makes, prices, and other information - is imported from a text file. Available commands include the ability to buy cars, return them, and to filter the list based on certain criteria. There are also advanced commands, including filtering the sales team based on their transactions. Error handling is implemented to ensure the program operates in a stable manner.
+    description: Programmed a fully functional car dealership simulator in Java. This application simulates larger, commercial applications. A list of cars - including makes, prices, and other information - is imported from a text file. Available commands include the ability to buy cars, return them, and to filter the list based on certain criteria.  There are also advanced commands, including filtering the sales team based on their transactions. Several Java data structures are used, including HashMaps to handle sales team data. The application was tested extensively throughout the development process, and runs on the local machine.
 
 #List of professional experience
 #The job description allows hiring managers to understand your job and the technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
@@ -84,35 +53,23 @@ professional_experience:
     company: "Jarvis"
     duration: "2023-present"
     # The project description must start with an action verb (https://bit.ly/3guO98u)
-    description: "Working alone and with a team to develop software."
+    description: "Working as a software engineer to design and program applications. I have developed Bash scripts (along with PostgreSQL and Docker) to gather and store data on Linux systems. Our group uses the Agile model, which allows us to discuss our progress on different projects. In particular, daily scrums enable us to understand what we have done and what we plan to do, enabling a more efficient workflow."
   - title: "Data Engineer"
     company: "Fiix Software"
     duration: "2021"
-    description: "Developed web scraping software, and then populated databases with the gathered data. The scraper I developed executed 35% faster than its predecessor, with 40% fewer lines of code. In addition, I developed an automated script to transfer data into company databases."
+    description: "Developed web scraping software using Python (including the pandas and boto3 libraries). In addition, I used AWS (including crontabs) and Python, to enter the gathered data into SQL databases at a regular interval. The scraper I developed executed 35% faster than its predecessor. This allowed the company to process data at a faster rate than before." 
 
-#List of edcuation
 education: 
   - school_name: "Toronto Metropolitan University"
     duration: "2018-2022"
     degree: "Bachelor of Sciences"
     department: "Computer Science"
-    # optional
     awards_achievements: 
       - "Dean's List (2020, 2021)"
       - "GPA: 3.3/4.0"
 
-#Optional section
 others:
-    #category
-  - title: "Certificates"
-    #list of items
-    bullets:
-      - "Udacity Machine Learning (2019)"
-  - title: "Awards"
-    bullets:
-      - "Winner"
   - title: "Activities/Hobbies"
     bullets:
-      - "Basketball player"
-      - "Competitive gaming"
-      - "Volunteer, ABC Food bank: Ut enim ad minim veniam"
+      - "Organized a competitive soccer league"
+      - "Captained several competitive basketball teams"

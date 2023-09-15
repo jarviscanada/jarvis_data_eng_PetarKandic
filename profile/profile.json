@@ -14,76 +14,29 @@
   "github_repo_root_url": "https://github.com/jarviscanada/jarvis_data_eng_PetarKandic",
   "highlighted_projects": [
     {
-      "description": "Designed a web tutoring app. The app dynamically displays a range of subjects for which tutors are available. The login system stores and retrieves account information using SQL. Active display elements use JavaScript.",
+      "description": "Designed a web tutoring application. The goal was to develop a mock-up of a real tutoring application, with a log-in functionality. In addition to HTML/CSS, JavaScript was used to construct the active elements. The login system uses SQL to store and retrieve the user's log-in info. The application displays a range of subjects for which tutors are available. I enlisted several friends to test this application; this experience led to improvements in the UI. The application runs on the local machine.",
       "git_url": "https://github.com/pkandic4/TutoringApplication",
-      "name": "Tutoring Web App"
+      "name": "Tutoring Web Application"
     },
     {
-      "description": "Programmed a fully functional car dealership simulator in Java. A list of cars - including makes, prices, and other information - is imported from a text file. Available commands include the ability to buy cars, return them, and to filter the list based on certain criteria. There are also advanced commands, including filtering the sales team based on their transactions. Error handling is implemented to ensure the program operates in a stable manner.",
+      "description": "Programmed a fully functional car dealership simulator in Java. This application simulates larger, commercial applications. A list of cars - including makes, prices, and other information - is imported from a text file. Available commands include the ability to buy cars, return them, and to filter the list based on certain criteria.  There are also advanced commands, including filtering the sales team based on their transactions. Several Java data structures are used, including HashMaps to handle sales team data. The application was tested extensively throughout the development process, and runs on the local machine.",
       "git_url": "https://github.com/pkandic4/CarDealershipSimulator",
       "name": "Java Car Dealership Simulator"
     }
   ],
   "jarvis_projects": [
     {
-      "description": "Developed several applications to monitor the status of the system. Shell scripts are used to gather data on system memory and performance. Then, this is stored in a database.",
+      "description": "Developed two Bash scripts to monitor the status of a Linux system. These shell scripts are used to gather data on system memory and performance. The data is stored on a PostgreSQL database, hosted on a Docker container. The scripts are automatically run every minute, using a Crontab job. These scripts, and their automation, saves time over having to manually check the system's status.",
       "git_url": "/linux_sql",
       "name": "Cluster Monitor"
-    },
-    {
-      "description": [
-        "Twitter App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.",
-        "JDBC App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.",
-        "Grep App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
-      ],
-      "git_url": "/core_java",
-      "name": "Core Java Apps"
-    },
-    {
-      "description": "",
-      "git_url": "/springboot",
-      "name": "Springboot App"
-    },
-    {
-      "description": "",
-      "git_url": "/python_data_anlytics",
-      "name": "Python Data Analytics"
-    },
-    {
-      "description": "",
-      "git_url": "/hadoop",
-      "name": "Hadoop"
-    },
-    {
-      "description": "",
-      "git_url": "/spark",
-      "name": "Spark"
-    },
-    {
-      "description": "",
-      "git_url": "/cloud_devops",
-      "name": "Cloud/DevOps"
     }
   ],
   "name": "Petar Kandic",
   "others": [
     {
       "bullets": [
-        "Udacity Machine Learning (2019)"
-      ],
-      "title": "Certificates"
-    },
-    {
-      "bullets": [
-        "Winner"
-      ],
-      "title": "Awards"
-    },
-    {
-      "bullets": [
-        "Basketball player",
-        "Competitive gaming",
-        "Volunteer, ABC Food bank: Ut enim ad minim veniam"
+        "Organized a competitive soccer league",
+        "Captained several competitive basketball teams"
       ],
       "title": "Activities/Hobbies"
     }
@@ -91,13 +44,13 @@
   "professional_experience": [
     {
       "company": "Jarvis",
-      "description": "Working alone and with a team to develop software.",
+      "description": "Working as a software engineer to design and program applications. I have developed Bash scripts (along with PostgreSQL and Docker) to gather and store data on Linux systems. Our group uses the Agile model, which allows us to discuss our progress on different projects. In particular, daily scrums enable us to understand what we have done and what we plan to do, enabling a more efficient workflow.",
       "duration": "2023-present",
       "title": "Software Developer"
     },
     {
       "company": "Fiix Software",
-      "description": "Developed web scraping software, and then populated databases with the gathered data. The scraper I developed executed 35% faster than its predecessor, with 40% fewer lines of code. In addition, I developed an automated script to transfer data into company databases.",
+      "description": "Developed web scraping software using Python (including the pandas and boto3 libraries). In addition, I used AWS (including crontabs) and Python, to enter the gathered data into SQL databases at a regular interval. The scraper I developed executed 35% faster than its predecessor. This allowed the company to process data at a faster rate than before.",
       "duration": "2021",
       "title": "Data Engineer"
     }
@@ -108,8 +61,7 @@
       "JavaScript",
       "Bootstrap",
       "Python",
-      "cURL",
-      "Debugging"
+      "Rust"
     ],
     "familiar": [
       "Docker",
@@ -127,5 +79,5 @@
       "C"
     ]
   },
-  "summary": "For years, I have passionate about both developing software, and learning about the field of software engineering. I began to program as a teenager, focusing on commonly-used languages such as Java. During university, I came to learn more about the theoritical foundations of computer science, and how to apply this knowledge. Finally, I have gained hands-on experience in the professional world. These experiences have allowed me to gain a wide range of skills. My strongest languages are Java and C, though I have experience with other languages, such as Python, JavaScript, and Bash, among others."
+  "summary": "I am a software engineer with 5 years of experience developing applications. Over the course of my professional and personal experience, I have gained a significant understanding of languages such as Java and C, as well as commonly-used technologies, including Linux and Git. While back-end development is my greatest strength, I also have experience designing websites, utilizing HTML/CSS. I have worked both alone and as part of a team, accomplising goals alongside my coworkers. Whenever new challenges arise, I am prepared to take them on, using whal I have learned."
 }
