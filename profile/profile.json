@@ -1,0 +1,131 @@
+{
+  "education": [
+    {
+      "awards_achievements": [
+        "Dean's List (2020, 2021)",
+        "GPA: 3.3/4.0"
+      ],
+      "degree": "Bachelor of Sciences",
+      "department": "Computer Science",
+      "duration": "2018-2022",
+      "school_name": "Toronto Metropolitan University"
+    }
+  ],
+  "github_repo_root_url": "https://github.com/jarviscanada/jarvis_data_eng_PetarKandic",
+  "highlighted_projects": [
+    {
+      "description": "Designed a web tutoring app. The app dynamically displays a range of subjects for which tutors are available. The login system stores and retrieves account information using SQL. Active display elements use JavaScript.",
+      "git_url": "https://github.com/pkandic4/TutoringApplication",
+      "name": "Tutoring Web App"
+    },
+    {
+      "description": "Programmed a fully functional car dealership simulator in Java. A list of cars - including makes, prices, and other information - is imported from a text file. Available commands include the ability to buy cars, return them, and to filter the list based on certain criteria. There are also advanced commands, including filtering the sales team based on their transactions. Error handling is implemented to ensure the program operates in a stable manner.",
+      "git_url": "https://github.com/pkandic4/CarDealershipSimulator",
+      "name": "Java Car Dealership Simulator"
+    }
+  ],
+  "jarvis_projects": [
+    {
+      "description": "Developed several applications to monitor the status of the system. Shell scripts are used to gather data on system memory and performance. Then, this is stored in a database.",
+      "git_url": "/linux_sql",
+      "name": "Cluster Monitor"
+    },
+    {
+      "description": [
+        "Twitter App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.",
+        "JDBC App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.",
+        "Grep App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
+      ],
+      "git_url": "/core_java",
+      "name": "Core Java Apps"
+    },
+    {
+      "description": "",
+      "git_url": "/springboot",
+      "name": "Springboot App"
+    },
+    {
+      "description": "",
+      "git_url": "/python_data_anlytics",
+      "name": "Python Data Analytics"
+    },
+    {
+      "description": "",
+      "git_url": "/hadoop",
+      "name": "Hadoop"
+    },
+    {
+      "description": "",
+      "git_url": "/spark",
+      "name": "Spark"
+    },
+    {
+      "description": "",
+      "git_url": "/cloud_devops",
+      "name": "Cloud/DevOps"
+    }
+  ],
+  "name": "Petar Kandic",
+  "others": [
+    {
+      "bullets": [
+        "Udacity Machine Learning (2019)"
+      ],
+      "title": "Certificates"
+    },
+    {
+      "bullets": [
+        "Winner"
+      ],
+      "title": "Awards"
+    },
+    {
+      "bullets": [
+        "Basketball player",
+        "Competitive gaming",
+        "Volunteer, ABC Food bank: Ut enim ad minim veniam"
+      ],
+      "title": "Activities/Hobbies"
+    }
+  ],
+  "professional_experience": [
+    {
+      "company": "Jarvis",
+      "description": "Working alone and with a team to develop software.",
+      "duration": "2023-present",
+      "title": "Software Developer"
+    },
+    {
+      "company": "Fiix Software",
+      "description": "Developed web scraping software, and then populated databases with the gathered data. The scraper I developed executed 35% faster than its predecessor, with 40% fewer lines of code. In addition, I developed an automated script to transfer data into company databases.",
+      "duration": "2021",
+      "title": "Data Engineer"
+    }
+  ],
+  "skills": {
+    "competent": [
+      "HTML/CSS",
+      "JavaScript",
+      "Bootstrap",
+      "Python",
+      "cURL",
+      "Debugging"
+    ],
+    "familiar": [
+      "Docker",
+      "AWS",
+      "Functional Languages/Elixir",
+      "C#",
+      "C++"
+    ],
+    "proficient": [
+      "Java",
+      "Linux/Bash",
+      "RDBMS/SQL",
+      "Agile/Scrum",
+      "Git",
+      "C"
+    ]
+  },
+  "summary": "For years, I have passionate about both developing software, and learning about the field of software engineering. I began to program as a teenager, focusing on commonly-used languages such as Java. During university, I came to learn more about the theoritical foundations of computer science, and how to apply this knowledge. Finally, I have gained hands-on experience in the professional world. These experiences have allowed me to gain a wide range of skills. My strongest languages are Java and C, though I have experience with other languages, such as Python, JavaScript, and Bash, among others."
+}
