@@ -29,7 +29,7 @@ The Linux Cluster Monitoring Agent is a tool which allows a user to monitor ever
 ## Architecture
    ![alt text](assets/ClusterDiagram.png)
 
-    We see that the agent scripts are run on every node.
+    We see that the agent scripts are run on every node. The data is then stored in the PostgreSQL database. The Docker container holding the database is located in node 1.
  
 ## Scripts
   1) ### Database and Docker Initialization
