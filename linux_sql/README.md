@@ -5,19 +5,19 @@ The Linux Cluster Monitoring Agent is a tool which allows a user to monitor ever
 # Quick Start
  - ```psql_docker.sh```:
    ```bash 
-   linux_sql/scripts/psql_docker.sh "start" "[user]" "[password]" 
+   linux_sql/scripts/psql_docker.sh start [user] [password] 
    ```
  - ```ddl.sh```:
    ```bash
-   psql -h  "[host_name]"-U "[user]"-d "[psql_host]" -f linux_sql/sql/ddl.sql  
+   psql -h  [host_name] -U [user]-d [psql_host] -f linux_sql/sql/ddl.sql  
    ```
  - ```host_info.sh```:
    ```bash
-   bash linux_sql/scripts/host_info.sh "[psql_host]" [psql_port] "[db_name]" "[psql_user]" "[psql_password]"
+   bash linux_sql/scripts/host_info.sh [psql_host] [psql_port] [db_name] [psql_user] [psql_password]
    ```
  - ```host_usage.sh```:
    ```bash
-   bash linux_sql/scripts/host_usage.sh "[psql_host]" [psql_port] "[db_name]" "[psql_user]" "[psql_password]"
+   bash linux_sql/scripts/host_usage.sh [psql_host] [psql_port] [db_name] [psql_user] [psql_password]
    ```
  - ```crontab``` job:  
    ```bash
