@@ -5,24 +5,24 @@ The Linux Cluster Monitoring Agent is a tool which allows a user to monitor ever
 # Quick Start
  - ```psql_docker.sh```:
    ```bash 
-   linux_sql/scripts/psql_docker.sh "start" "[user]" "[password]" 
+   linux_sql/scripts/psql_docker.sh start [user] [password] 
    ```
  - ```ddl.sh```:
    ```bash
-   psql -h  "[host_name]"-U "[user]"-d "[psql_host]" -f linux_sql/sql/ddl.sql  
+   psql -h  [host_name]-U [user]-d [psql_host] -f linux_sql/sql/ddl.sql  
    ```
  - ```host_info.sh```:
    ```bash
-   bash linux_sql/scripts/host_info.sh "[psql_host]" [psql_port] "[db_name]" "[psql_user]" "[psql_password]"
+   bash linux_sql/scripts/host_info.sh [psql_host] [psql_port] [db_name] [psql_user] [psql_password]
    ```
  - ```host_usage.sh```:
    ```bash
-   bash linux_sql/scripts/host_usage.sh "[psql_host]" [psql_port] "[db_name]" "[psql_user]" "[psql_password]"
+   bash linux_sql/scripts/host_usage.sh [psql_host] [psql_port] [db_name] [psql_user] [psql_password]
    ```
  - ```crontab``` job:  
    ```bash
    crontab -e
-   * * * * * bash linux_sql/host_agent/scripts/host_usage.sh "[psql_host]" [psql_port] "[db_name]" "[psql_user]" "[psql_password]" > /tmp/host_usage.log
+   * * * * * bash linux_sql/host_agent/scripts/host_usage.sh [psql_host] [psql_port] [db_name] [psql_user] [psql_password] > /tmp/host_usage.log
    ```
 # Implementation
    The agent comprises four files and a crontab job. Three are written in Bash, one (```ddl.sql```) is written in SQL, and the crontab job is used to run one Bash script every minute. 
@@ -36,23 +36,23 @@ We see that the agent scripts are run on every node.
       We must first ensure that the PostgreSQL instance is running, and that the tables which will hold our data have been created. We will do this by starting a Docker container, and attaching a "volume". This volume is a PostgreSQL instance containing the tables which will store our data. We will use ```psql_docker.sh``` and ```ddl.sql```: 
       ```bash
        # Start the Docker container
-       linux_sql/scripts/psql_docker.sh "start" "[user]" "[password]" 
+       linux_sql/scripts/psql_docker.sh start [user] [password]
      
        # Create the tables 
-       psql -h  "[host_name]"-U "[user]"-d "[psql_host]" -f linux_sql/sql/ddl.sql        
+       psql -h  [host_name]-U [user]-d [psql_host] -f linux_sql/sql/ddl.sql        
       ```
   2) ### host_info.sh Usage
      This script is to be run only once per node, as hardware specifications are assumed to be static. The hardware specifications are entered into the host_info table in the PostgreSQL instance.
      ```bash
       # Determines the hardware specifications, then enters them into the container
-      bash linux_sql/scripts/host_info.sh "[psql_host]" [psql_port] "[db_name]" "[psql_user]" "[psql_password]"
+      bash linux_sql/scripts/host_info.sh [psql_host] [psql_port] [db_name] [psql_user] [psql_password]
      ```
 
   3) ### host_usage.sh Usage
        This script will be run every minute, using the ```crontab``` job below. It is used to determine the node's software usage data at the moment of execution. The data is stored persistently on the volume.
      ```bash
       # Determines the usage data, then enters them into the container
-      bash linux_sql/scripts/host_usage.sh "[psql_host]" [psql_port] "[db_name]" "[psql_user]" "[psql_password]"
+      bash linux_sql/scripts/host_usage.sh [psql_host] [psql_port] [db_name] [psql_user] [psql_password]
      ```  
 
    4) ### ```crontab``` Setup
@@ -61,7 +61,7 @@ We see that the agent scripts are run on every node.
       # Allows crontab jobs to be edited
       crontab -e
       # Sets up the job
-      * * * * * bash linux_sql/host_agent/scripts/host_usage.sh "[psql_host]" [psql_port] "[db_name]" "[psql_user]" "[psql_password]" > /tmp/host_usage.log
+      * * * * * bash linux_sql/host_agent/scripts/host_usage.sh [psql_host] [psql_port] [db_name] [psql_user] [psql_password] > /tmp/host_usage.log
       # Confirm that the job was created
       crontab -ls
       # Check the log file, to confirm the job is working as intended
