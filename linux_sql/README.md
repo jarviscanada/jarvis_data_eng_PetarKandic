@@ -27,7 +27,7 @@ The Linux Cluster Monitoring Agent is a tool which allows a user to monitor ever
 # Implementation
    The agent comprises four files and a crontab job. Three are written in Bash, one (```ddl.sql```) is written in SQL, and the crontab job is used to run one Bash script every minute. 
 ## Architecture
-   ![alt text](C:\Users\petar\OneDrive\Pictures\ClusterDiagram.png)
+   ![alt text](assets/ClusterDiagram.png)
 
 We see that the agent scripts are run on every node.
  
