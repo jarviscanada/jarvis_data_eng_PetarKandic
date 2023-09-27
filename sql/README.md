@@ -1,6 +1,5 @@
 # Introduction
-(about 100-150 words)
-Discuss the design of the project. What does this project/product do? Who are the users? What are the technologies you have used? (e.g. bash, docker, git, etc..)
+In this project, several SQL tables, as well as queries on those tables, have been created. The tables are created in a PostgreSQL instance, managed from a Docker container. The queries may be executed outside the database, using ```queries.sql```. The intent is to illustrate the design of SQL tables, as well as how to design queries in PostgreSQL (and SQL in general), and what those queries do. There are several dozen queries. They demonstrate Data Query Language (DQL) features such as SELECT, and Data Manipulation Language (DML) features such as INSERT and DELETE. There are also several uses of Joins, with their different types being demonstrated.  
 
 # SQL Queries
 
