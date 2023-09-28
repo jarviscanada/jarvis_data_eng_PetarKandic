@@ -17,6 +17,8 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_PetarKandi
 
 **Cluster Monitor** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_PetarKandic/tree/master/linux_sql)]: Developed a package of Bash scripts to monitor the status of a Linux system. These shell scripts allow users to monitor the status of all nodes in a Linux cluster. After a PostgreSQL instance is created in a Docker container, tables are created in the instance to store the node data. The hardware data and software usage data are then stored in the database. The software usage data is added persistently to the database, using the cron tool. The agent was tested manually, checking the databases the ensure the data was transferred.
 
+**SQL Tables and Queries** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_PetarKandic/tree/master/sql)]: Designed an SQL database comprising three tables, and created several dozen queries on those tables. These queries demonstrate several key SQL operations, ranging from simple INSERT statements, to advanced JOINS. A user may study these queries to understand how these operations work. These operations were tested on a PostgreSQL instance, managed by a Docker container.
+
 
 ## Highlighted Projects
 **Tutoring Web Application** [[GitHub](https://github.com/pkandic4/TutoringApplication)]: Designed and developed a tutoring application. Users explore a mock-up of a commercial web-application, navigating its pages and using the log-in system. HTML/CSS is used for the static elements, JavaScript is used for active elements (including windows which fade in), and SQL to store and retrieve log-in data. I used Mocha to test the log-in functionality, and manual testing for the rest of the application.
