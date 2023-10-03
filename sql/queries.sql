@@ -45,7 +45,7 @@ SELECT facid,name,membercost,monthlymaintenance
 
 -- Question 2: Basic string searches
 
-SELECT * FROM cd.facilities WHERE name LIKE '%Tennis%'
+SELECT * FROM cd.facilities WHERE name LIKE '%Tennis%';
 
 -- Question 3: Matching against multiple possible values
 
@@ -154,7 +154,7 @@ SELECT facid, extract (month FROM starttime) AS month, sum(slots) AS "Total Slot
     FROM cd.bookings
     WHERE extract(year FROM starttime) = 2012
     GROUP BY facid, month
-ORDER BY facid, month
+ORDER BY facid, month;
 
 -- Question 5: Find the count of members who have made at least one booking
 
@@ -174,14 +174,14 @@ ORDER BY members.memid;
 
 SELECT count(*) OVER(), firstname, surname
     FROM cd.members
-ORDER BY joindate
+ORDER BY joindate;
 
 
 -- Question 8: Produce a numbered list of members
 
 SELECT row_number() OVER (ORDER BY joindate), firstname, surname
     FROM cd.members
-ORDER BY joindate
+ORDER BY joindate;
 
 -- Question 9: Output the facility id that has the highest number of slots booked, again
 
@@ -192,7 +192,7 @@ SELECT facid, total FROM
         GROUP BY facid
     )
     AS ranked
-WHERE rank = 1
+WHERE rank = 1;
 
 -- String
 

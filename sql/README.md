@@ -4,6 +4,7 @@ In this project, several SQL tables, as well as queries on those tables, have be
 # SQL Queries
 
 ###### Table Setup (DDL)
+### It is assumed that the schema cd has been created:
 
     CREATE TABLE cd.members
         (
@@ -108,7 +109,7 @@ SELECT facid,name,membercost,monthlymaintenance
 ###### Question 2: Basic string searches
 
 ```sql
-SELECT * FROM cd.facilities WHERE name LIKE '%Tennis%'
+SELECT * FROM cd.facilities WHERE name LIKE '%Tennis%';
 ```
 
 ###### Question 3: Matching against multiple possible values
@@ -241,13 +242,13 @@ SELECT facid, extract (month FROM starttime) AS month, sum(slots) AS "Total Slot
     FROM cd.bookings
     WHERE extract(year FROM starttime) = 2012
     GROUP BY facid, month
-ORDER BY facid, month
+ORDER BY facid, month;
 ```
 
 ###### Question 5: Find the count of members who have made at least one booking
 
 ```sql
-SELECT count (DISTINCT memid) FROM cd.bookings
+SELECT count (DISTINCT memid) FROM cd.bookings;
 ```
 
 ###### Question 6: List each member's first booking after September 1st 2012
@@ -267,7 +268,7 @@ ORDER BY members.memid;
 ```sql
 SELECT count(*) OVER(), firstname, surname
     FROM cd.members
-ORDER BY joindate
+ORDER BY joindate;
 ```
 
 ###### Question 8: Produce a numbered list of members
@@ -275,7 +276,7 @@ ORDER BY joindate
 ```sql
 SELECT row_number() OVER (ORDER BY joindate), firstname, surname
     FROM cd.members
-ORDER BY joindate
+ORDER BY joindate;
 ```
 
 ###### Question 9: Output the facility id that has the highest number of slots booked, again
@@ -288,7 +289,7 @@ SELECT facid, total FROM
         GROUP BY facid
     )
     AS ranked
-WHERE rank = 1
+WHERE rank = 1;
 ```
 
 ## String
