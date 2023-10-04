@@ -52,11 +52,4 @@ public class FibonacciSequenceMemoization
         memoArray[position] = calculateFibonacciMemoization(position - 1) + calculateFibonacciMemoization(position - 2);
         return memoArray[position];
     }
-
-    public static void main(String[] args)
-    {
-        int position = 4;
-        long result = fibonacciMemoization(position);
-        System.out.println("Fibonacci(" + position + ") = " + result);
-    }
 }
