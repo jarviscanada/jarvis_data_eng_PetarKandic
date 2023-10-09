@@ -10,15 +10,15 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- *  * This class implements the methods found in JavaGrep.
- *   * There are three instance fields, as well as a Logger instance.
- *    * The instance variables store command-line arguments:
- *     * These are a regex, a root path, and an output file.
- *      * The regex is used to find matching lines in a given directory (root path)
- *       * The matching lines are written to the output file.
- *        * The logger is used to write error messages for caught exceptions.
- *         * More detailed descriptions may be found below.
- *          */
+ * This class implements the methods found in JavaGrep.
+ * There are three instance fields, as well as a Logger instance.
+ * The instance variables store command-line arguments:
+ * These are a regex, a root path, and an output file.
+ * The regex is used to find matching lines in a given directory (root path)
+ * The matching lines are written to the output file.
+ * The logger is used to write error messages for caught exceptions.
+ * More detailed descriptions may be found below.
+ */
 
 public class JavaGrepImp implements JavaGrep
 {
@@ -30,12 +30,12 @@ public class JavaGrepImp implements JavaGrep
     private String outFile;
 
     /**
- *      * The main method of the program.
- *           * Three command line arguments are expected.
- *                * Each are assigned to the relevant instance fields (using the setter methods).
- *                     * The process methods is invoked, and a try-catch block is used to catch IOExceptions.
- *                          * @param args 3 arguments (regex, rootPath, outFile) are expected.
- *                               */
+     * The main method of the program.
+     * Three command line arguments are expected.
+     * Each are assigned to the relevant instance fields (using the setter methods).
+     * The process methods is invoked, and a try-catch block is used to catch IOExceptions.
+     * @param args 3 arguments (regex, rootPath, outFile) are expected.
+     */
     public static void main(String[] args)
     {
         if (args.length != 3)
@@ -61,16 +61,16 @@ public class JavaGrepImp implements JavaGrep
     }
 
     /**
- *      * This method controls the overall workflow.
- *           * A list of Strings, matchedLines is created.
- *                * We invoke listFiles to find files in the root path.
- *                     * Then, we invoke readLines to find all lines in these files.
- *                          * We then invoke containsPattern to search these lines, and lines which match the regex.
- *                               * These are added to matchedLines.
- *                                    * Finally, matchedLines is written to the outFile, using writeToFile.
- *                                         * IOExceptions thrown here are caught in the main method.
- *                                              * @throws IOException
- *                                                   */
+     * This method controls the overall workflow.
+     * A list of Strings, matchedLines is created.
+     * We invoke listFiles to find files in the root path.
+     * Then, we invoke readLines to find all lines in these files.
+     * We then invoke containsPattern to search these lines, and lines which match the regex.
+     * These are added to matchedLines.
+     * Finally, matchedLines is written to the outFile, using writeToFile.
+     * IOExceptions thrown here are caught in the main method.
+     * @throws IOException
+     */
     @Override
     public void process() throws IOException
     {
@@ -92,16 +92,16 @@ public class JavaGrepImp implements JavaGrep
     }
 
     /**
- *      * Recursively searches through rootDir, and finds all files "under" it.
- *           * We convert rootDir to a File, which allows for searching.
- *                * We explore the current directory using a for loop.
- *                     * If we find a file, we add it to fileList, which will be returned.
- *                          * If we find a directory, we recursively call listFiles, passing the current absolute path.
- *                               * This allows us to explore subdirectories.
- *                                    * After the directory has been fully explored, we return the fileList.
- *                                         * @param rootDir input directory
- *                                              * @return the list of all files under rootDir
- *                                                   */
+     * Recursively searches through rootDir, and finds all files "under" it.
+     * We convert rootDir to a File, which allows for searching.
+     * We explore the current directory using a for loop.
+     * If we find a file, we add it to fileList, which will be returned.
+     * If we find a directory, we recursively call listFiles, passing the current absolute path.
+     * This allows us to explore subdirectories.
+     * After the directory has been fully explored, we return the fileList.
+     * @param rootDir input directory
+     * @return the list of all files under rootDir
+     */
     @Override
     public List<File> listFiles(String rootDir)
     {
@@ -134,18 +134,18 @@ public class JavaGrepImp implements JavaGrep
 
 
     /**
- *      * We find all lines in the files (returned above).
- *           * They will be stored in lineList.
- *                * FileReader is used to read from the input file.
- *                     * BufferedReader stores FileReader's stream in a buffer.
- *                          * Lines are encoded (each int corresponds to a character) and entered into the buffer.
- *                               * BufferedReader allows for a flexible buffer size, and allows us to handle IOExceptions.
- *                                    * The encoding also allows for efficient reading of characters.
- *                                         * Otherwise, FileReader would convert each character into bytes, which would be costly.
- *                                              * We add each line to lineList, then return it.
- *                                                   * @param inputFile file to be read
- *                                                        * @return lines in the files
- *                                                             */
+     * We find all lines in the files (returned above).
+     * They will be stored in lineList.
+     * FileReader is used to read from the input file.
+     * BufferedReader stores FileReader's stream in a buffer.
+     * Lines are encoded (each int corresponds to a character) and entered into the buffer.
+     * BufferedReader allows for a flexible buffer size, and allows us to handle IOExceptions.
+     * The encoding also allows for efficient reading of characters.
+     * Otherwise, FileReader would convert each character into bytes, which would be costly.
+     * We add each line to lineList, then return it.
+     * @param inputFile file to be read
+     * @return lines in the files
+     */
     @Override
     public List<String> readLines(File inputFile)
     {
@@ -168,14 +168,14 @@ public class JavaGrepImp implements JavaGrep
     }
 
     /**
- *      * Two libraries are used to match the regex with a given line.
- *           * Pattern is used to compile the regex.
- *                * Matcher is used to match the Pattern with the line.
- *                     * If there is a match, true is returned.
- *                          * Otherwise, false is returned.
- *                               * @param line input string
- *                                    * @return true if pattern is found, false otherwise.
- *                                         */
+     * Two libraries are used to match the regex with a given line.
+     * Pattern is used to compile the regex.
+     * Matcher is used to match the Pattern with the line.
+     * If there is a match, true is returned.
+     * Otherwise, false is returned.
+     * @param line input string
+     * @return true if pattern is found, false otherwise.
+     */
     @Override
     public boolean containsPattern(String line)
     {
@@ -186,13 +186,13 @@ public class JavaGrepImp implements JavaGrep
     }
 
     /**
- *      * Writes to the user-provided output file.
- *           * Much like BufferedReader, BufferedWriter places characters from FileWriter's output stream into a buffer.
- *                * The encoded lines are more efficiently written than they would be with FileWriter.
- *                     * Each line is followed by a new line.
- *                          * @param lines matched line
- *                               * @throws IOException
- *                                    */
+     * Writes to the user-provided output file.
+     * Much like BufferedReader, BufferedWriter places characters from FileWriter's output stream into a buffer.
+     * The encoded lines are more efficiently written than they would be with FileWriter.
+     * Each line is followed by a new line.
+     * @param lines matched line
+     * @throws IOException
+     */
     @Override
     public void writeToFile(List<String> lines) throws IOException
     {
@@ -213,9 +213,9 @@ public class JavaGrepImp implements JavaGrep
     }
 
     /**
- *      * Getter for the root path.
- *           * @return the root path
- *                */
+      * Getter for the root path.
+      * @return the root path
+      */
     @Override
     public String getRootPath()
     {
@@ -223,9 +223,9 @@ public class JavaGrepImp implements JavaGrep
     }
 
     /**
- *      * Setter for the root path.
- *           * @param rootPath
- *                */
+      * Setter for the root path.
+      * @param rootPath
+      */
     @Override
     public void setRootPath(String rootPath)
     {
@@ -233,9 +233,9 @@ public class JavaGrepImp implements JavaGrep
     }
 
     /**
- *      * Getter for the regex.
- *           * @return the regex
- *                */
+      * Getter for the regex.
+      * @return the regex
+      */
     @Override
     public String getRegex()
     {
@@ -243,9 +243,9 @@ public class JavaGrepImp implements JavaGrep
     }
 
     /**
- *      * Setter for the regex.
- *           * @param regex
- *                */
+      * Setter for the regex.
+      * @param regex
+      */
     @Override
     public void setRegex(String regex)
     {
@@ -253,9 +253,9 @@ public class JavaGrepImp implements JavaGrep
     }
 
     /**
- *      * Getter for the output file.
- *           * @return the output file
- *                */
+      * Getter for the output file.
+      * @return the output file
+      */
     @Override
     public String getOutFile()
     {
@@ -263,9 +263,9 @@ public class JavaGrepImp implements JavaGrep
     }
 
     /**
- *      * Setter for the output file.
- *           * @param outFile
- *                */
+      * Setter for the output file.
+      * @param outFile
+      */
     @Override
     public void setOutFile(String outFile)
     {
