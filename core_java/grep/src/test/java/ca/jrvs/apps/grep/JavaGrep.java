@@ -7,9 +7,9 @@ import java.util.List;
 public interface JavaGrep
 {
     /**
- *      * Top level search workflow
- *           * @throws IOException
- *                */
+     *Top level search workflow
+     * @throws IOException
+     */
     void process() throws IOException;
 
     /**
