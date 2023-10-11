@@ -1,4 +1,4 @@
-//package ca.jrvs.apps.grep;
+package ca.jrvs.apps.grep;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -23,7 +23,7 @@ public class JavaGrepLambdaImp extends JavaGrepImp
     {
         if (args.length != 3)
         {
-            throw new IllegalArgumentException("USAGE: ca.jrvs.apps.grep.JavaGrep regex rootPath outFile");
+            throw new IllegalArgumentException("USAGE: JavaGrep regex rootPath outFile");
         }
 
         JavaGrepLambdaImp javaGrepLambdaImp = new JavaGrepLambdaImp();
@@ -38,10 +38,10 @@ public class JavaGrepLambdaImp extends JavaGrepImp
             List<String> lineList = new ArrayList<>();
             List<String> matchedLines = new ArrayList<>();
             fileList = javaGrepLambdaImp.listFiles(javaGrepLambdaImp.getRootPath());
-           fileList.forEach(aFile -> {
-               List<String> lines = javaGrepLambdaImp.readLines(aFile);
-               lines.forEach(line -> lineList.add(line));
-           });
+        lineList = fileList.stream()
+                .map(javaGrepLambdaImp::readLines)
+                .map(Object::toString)
+                .collect(Collectors.toList());
         matchedLines = lineList.stream()
                 .filter(javaGrepLambdaImp::containsPattern)
                 .collect(Collectors.toList());

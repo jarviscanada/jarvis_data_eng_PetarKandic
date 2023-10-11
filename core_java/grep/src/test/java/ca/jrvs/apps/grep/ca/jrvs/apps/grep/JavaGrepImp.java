@@ -1,4 +1,4 @@
-//package ca.jrvs.apps.grep;
+package ca.jrvs.apps.grep;
 
 import org.apache.log4j.BasicConfigurator;
 import org.slf4j.Logger;
@@ -79,11 +79,7 @@ public class JavaGrepImp implements JavaGrep
         List<String> lineList = new ArrayList<>();
         for (File aFile: fileList)
         {
-            List<String> lines = readLines(aFile);
-            for (String line : lines)
-            {
-                lineList.add(line);
-            }
+            lineList.add(readLines(aFile).toString());
         }
         for (String line: lineList)
         {
