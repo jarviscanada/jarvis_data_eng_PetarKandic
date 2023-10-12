@@ -33,6 +33,11 @@
       "description": "Designed an SQL database comprising three tables, and created several dozen queries on those tables. These queries demonstrate several key SQL operations, ranging from simple INSERT statements, to advanced JOINS. A user may study these queries to understand how these operations work. These operations were tested on a PostgreSQL instance, managed by a Docker container.",
       "git_url": "/sql",
       "name": "SQL Tables and Queries"
+    },
+    {
+      "description": "Created an implementation of grep, a Linux file-searching tool.By implementing grep in Java, we can achieve platform independence, as Java can run on all major operating systems. The application searches through a (user-provided) directory, and locates lines in files which match a given regex. These lines are written to a text file. Core Java was used to write the program, while Maven was used to manage the dependencies. jUnit was used to test the program.",
+      "git_url": "/core_java/grep",
+      "name": "Java Grep Implementation"
     }
   ],
   "name": "Petar Kandic",

@@ -19,6 +19,8 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_PetarKandi
 
 **SQL Tables and Queries** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_PetarKandic/tree/master/sql)]: Designed an SQL database comprising three tables, and created several dozen queries on those tables. These queries demonstrate several key SQL operations, ranging from simple INSERT statements, to advanced JOINS. A user may study these queries to understand how these operations work. These operations were tested on a PostgreSQL instance, managed by a Docker container.
 
+**Java Grep Implementation** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_PetarKandic/tree/master/core_java/grep)]: Created an implementation of grep, a Linux file-searching tool.By implementing grep in Java, we can achieve platform independence, as Java can run on all major operating systems. The application searches through a (user-provided) directory, and locates lines in files which match a given regex. These lines are written to a text file. Core Java was used to write the program, while Maven was used to manage the dependencies. jUnit was used to test the program.
+
 
 ## Highlighted Projects
 **Tutoring Web Application** [[GitHub](https://github.com/pkandic4/TutoringApplication)]: Designed and developed a tutoring application. Users explore a mock-up of a commercial web-application, navigating its pages and using the log-in system. HTML/CSS is used for the static elements, JavaScript is used for active elements (including windows which fade in), and SQL to store and retrieve log-in data. I used Mocha to test the log-in functionality, and manual testing for the rest of the application.
