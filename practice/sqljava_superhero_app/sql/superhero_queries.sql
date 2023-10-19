@@ -1,9 +1,9 @@
 SELECT gender_table.gender, COUNT(*) AS count
 FROM superhero AS s
-JOIN alignment AS a ON s.alignment_id = a.id
-JOIN colour AS ec ON s.eye_colour_id = ec.id
-JOIN colour AS hc ON s.hair_colour_id = hc.id
-JOIN gender AS gender_table ON s.gender_id = gender_table.id
+INNER JOIN alignment AS a ON s.alignment_id = a.id
+INNER JOIN colour AS ec ON s.eye_colour_id = ec.id
+INNER JOIN colour AS hc ON s.hair_colour_id = hc.id
+INNER JOIN gender AS gender_table ON s.gender_id = gender_table.id
 WHERE a.alignment = 'Good'
 AND 
 (
