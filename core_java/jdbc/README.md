@@ -3,7 +3,7 @@ The Stock Quote App simulates a simple stock portfolio. It may be used on its ow
 
 # Implementaiton
 ## ER Diagram
-![ER diagram: ](main\resources\Diagram.png)
+![ER diagram: ](src\main\resources\Diagram.png)
 
 ## Design Patterns
 We use Data Access Objects (DAOs) to comminicate with the database. DAOs are types of classes which are used to provide a layer of abstraction. Instead of directly communicating with a database, we create a DAO which has certain methods and attributes. These are used from another class to communicate with a database. For both our Position ("owned" stocks) and Quote (available stocks) databases, we have implemented a DAO. These DAOs are accessed from their respective "service" classes. Besides comminicating with the DAO, they provide certain functionalities (such as parsing of inputs). The QuoteHTTPHelper class is used to scrape data from the Alpha Vantage endpoint. The StockQuoteController class includes the main method, and is used to provide a layer of control, as it accepts user inputs.
