@@ -34,6 +34,10 @@ jarvis_projects:
   - name: "Java Grep Implementation"
     git_url: "/core_java/grep"
     description: Created an implementation of grep, a Linux file-searching tool.By implementing grep in Java, we can achieve platform independence, as Java can run on all major operating systems. The application searches through a (user-provided) directory, and locates lines in files which match a given regex. These lines are written to a text file. Core Java was used to write the program, while Maven was used to manage the dependencies. jUnit was used to test the program.
+  - name: "Java Stock Quote App"
+    git_url: "/core_java/jdbc"
+    description: Developed a simple stock portfolio app. The application may be either expanded upon to create a more advanced simulation, or be used as is. Data on a stock of the user's choice is pulled from a website (Alpha Vantage). The user may 'buy' or sell a specific quantity of stock which they own. JDBC (Java DataBase Connectivity) is used to store data in a PostgreSQL database. The application was written in Core Java (using JDBC) and was tested with both jUnit and Mockito.
+
 
 
 highlighted_projects:
