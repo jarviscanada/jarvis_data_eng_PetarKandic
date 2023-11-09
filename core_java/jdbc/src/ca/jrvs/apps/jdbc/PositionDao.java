@@ -216,7 +216,7 @@ public class PositionDao implements CrudDao<Position, Integer>
      * @return the updated position
      * @throws SQLException
      */
-    private Optional<Position> updatePosition(Position position) throws SQLException {
+    public Optional<Position> updatePosition(Position position) throws SQLException {
         PreparedStatement preparedStatement = connection.prepareStatement(
                 "UPDATE position SET symbol = ?, num_of_shares = ?, value_paid = ? WHERE id = ?");
 
