@@ -233,7 +233,7 @@ public class QuoteDao implements CrudDao<Quote, Integer> {
      * @return The new quote.
      * @throws SQLException
      */
-    private Optional<Quote> updateQuote(Quote quote) throws SQLException
+    public Optional<Quote> updateQuote(Quote quote) throws SQLException
     {
         //Prevents nullPointerExceptions
         Optional<Quote> quote1 = null;
