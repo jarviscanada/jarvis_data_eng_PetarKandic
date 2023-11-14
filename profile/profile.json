@@ -43,6 +43,11 @@
       "description": "Developed a simple stock portfolio app. The application may be either expanded upon to create a more advanced simulation, or be used as is. Data on a stock of the user's choice is pulled from a website (Alpha Vantage). The user may 'buy' or sell a specific quantity of stock which they own. JDBC (Java DataBase Connectivity) is used to store data in a PostgreSQL database. The application was written in Core Java (using JDBC) and was tested with both jUnit and Mockito.",
       "git_url": "/core_java/jdbc",
       "name": "Java Stock Quote App"
+    },
+    {
+      "description": "Designed and implemented a portfolio of JavaScript applications. These applications range from an implementation of doubly linked lists, to an application which converts Roman numbers to decinal numbers. These were created to demonstrate the syntax and capabilities of JavaScript. By creating several different applications with different purposes, users can observe the different capabilities of the language. All of these applications were extensively tested.",
+      "git_url": "/JavaScript",
+      "name": "JavaScript Demonstration"
     }
   ],
   "name": "Petar Kandic",
