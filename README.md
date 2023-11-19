@@ -25,6 +25,8 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_PetarKandi
 
 **JavaScript Demonstration** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_PetarKandic/tree/master/JavaScript)]: Designed and implemented a portfolio of JavaScript applications. These applications range from an implementation of doubly linked lists, to an application which converts Roman numbers to decinal numbers. These were created to demonstrate the syntax and capabilities of JavaScript. By creating several different applications with different purposes, users can observe the different capabilities of the language. All of these applications were extensively tested.
 
+**TypeScript Demonstration** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_PetarKandic/tree/master/JavaScript_TypeScript)]: Re-implemented the JavaScript applications described above in TypeScript. As with the JavaScript demonstration, this is primarily educational. Users can study these applications to understand TypeScript's static typing. As with the original applications, all of the re-implementations were extensively tested.
+
 
 ## Highlighted Projects
 **Tutoring Web Application** [[GitHub](https://github.com/pkandic4/TutoringApplication)]: Designed and developed a tutoring application. Users explore a mock-up of a commercial web-application, navigating its pages and using the log-in system. HTML/CSS is used for the static elements, JavaScript is used for active elements (including windows which fade in), and SQL to store and retrieve log-in data. I used Mocha to test the log-in functionality, and manual testing for the rest of the application.

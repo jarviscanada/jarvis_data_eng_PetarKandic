@@ -40,6 +40,9 @@ jarvis_projects:
   - name: "JavaScript Demonstration"
     git_url: "/JavaScript"
     description: Designed and implemented a portfolio of JavaScript applications. These applications range from an implementation of doubly linked lists, to an application which converts Roman numbers to decinal numbers. These were created to demonstrate the syntax and capabilities of JavaScript. By creating several different applications with different purposes, users can observe the different capabilities of the language. All of these applications were extensively tested.
+  - name: "TypeScript Demonstration"
+    git_url: "/JavaScript_TypeScript"
+    description: Re-implemented the JavaScript applications described above in TypeScript. As with the JavaScript demonstration, this is primarily educational. Users can study these applications to understand TypeScript's static typing. As with the original applications, all of the re-implementations were extensively tested.
 
 
 highlighted_projects:
