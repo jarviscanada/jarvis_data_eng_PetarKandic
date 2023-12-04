@@ -43,6 +43,9 @@ jarvis_projects:
   - name: "TypeScript Demonstration"
     git_url: "/JavaScript_TypeScript"
     description: Re-implemented the JavaScript applications described above in TypeScript. As with the JavaScript demonstration, this is primarily educational. Users can study these applications to understand TypeScript's static typing. As with the original applications, all of the re-implementations were extensively tested.
+  - name: "SpringBoot Trading App"
+    git_url: "/springboot"
+    description: Designed and implemented a trading application using SpringBoot. Users can use the application to buy and sell real stocks without needing real money, making this a useful simulation of product-scale applications. Core Java was used alongside SpringBoot, which allows databases to be updated with new data quickly and efficiently. Every method in each segment of the application was tested.
 
 
 highlighted_projects:
