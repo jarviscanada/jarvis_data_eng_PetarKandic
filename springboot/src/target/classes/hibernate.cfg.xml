@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<hibernate-configuration>
+    <session-factory>
+<property name="hibernate.temp.use_jdbc_metadata_defaults">false</property>
+<property name="hibernate.generate_statistics">true</property>
+    </session-factory>
+</hibernate-configuration>

@@ -1,4 +1,4 @@
-//package ca.jrvs.apps.grep;
+package ca.jrvs.apps.grep;
 
 import java.io.BufferedReader;
 import java.io.File;
